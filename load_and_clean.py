@@ -32,7 +32,10 @@ def load_and_clean_csv(csv_path):
         'natcap.invest.crop_production.crop_production',
         'natcap.invest.carbon.carbon_combined',
         'natcap.invest.habitat_suitability',
-        '\\N'
+        '\\N',
+        'root',
+        'natcap.invest.hra2',
+        'natcap.invest.schistosomiasis',
     ]
     total_rows = len(df)
     df = df[~df['model_name'].isin(drop_models)]
